@@ -1,0 +1,94 @@
+\hypertarget{classpokemon__database}{}\doxysection{pokemon\+\_\+database Class Reference}
+\label{classpokemon__database}\index{pokemon\_database@{pokemon\_database}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classpokemon__database_a5e33a03285f8e6b69570dc5e3175f346}{get\+Tam}} () const
+\begin{DoxyCompactList}\small\item\em Retorna el tamaño del vector creado. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classpokemon}{pokemon}} $>$ \mbox{\hyperlink{classpokemon__database_a799f171e876bcb4fe21ce27b3a32f061}{get\+Vector}} () const
+\begin{DoxyCompactList}\small\item\em Retorna el vector de pokemon. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpokemon__database_a23410bdcc81997a4a9640e3fff6c2eaf}{get\+Stats}} (int pos) const
+\begin{DoxyCompactList}\small\item\em Muestra por pantalla todas las estadisticas del pokemon dicho. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classpokemon__database_a6bbdd6625a662e8b5ea477c4104b2367}\label{classpokemon__database_a6bbdd6625a662e8b5ea477c4104b2367}} 
+\mbox{\hyperlink{classpokemon__database}{pokemon\+\_\+database}} \& {\bfseries operator=} (const \mbox{\hyperlink{classpokemon__database}{pokemon\+\_\+database}} \&orig)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{classpokemon__database_ad1c819d49991b49933d59ec173d00856}{add\+Pokemon}} (const \mbox{\hyperlink{classpokemon}{pokemon}} \&pkmn)
+\begin{DoxyCompactList}\small\item\em Permite añadir un pokemon al vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpokemon__database_ad328f3a15da0aebca0e14b2072cbfecf}\label{classpokemon__database_ad328f3a15da0aebca0e14b2072cbfecf}} 
+static std\+::vector$<$ \mbox{\hyperlink{classpokemon}{pokemon}} $>$ {\bfseries \+\_\+pokemon\+\_\+data}
+\begin{DoxyCompactList}\small\item\em Vector donde se guardan todos los pokemon del juego. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpokemon__database_ad1c819d49991b49933d59ec173d00856}\label{classpokemon__database_ad1c819d49991b49933d59ec173d00856}} 
+\index{pokemon\_database@{pokemon\_database}!addPokemon@{addPokemon}}
+\index{addPokemon@{addPokemon}!pokemon\_database@{pokemon\_database}}
+\doxysubsubsection{\texorpdfstring{addPokemon()}{addPokemon()}}
+{\footnotesize\ttfamily std\+::string pokemon\+\_\+database\+::add\+Pokemon (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classpokemon}{pokemon}} \&}]{pkmn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Permite añadir un pokemon al vector. 
+
+Dado un pokemon por parametro, este funcion lo añade al vector para poder usarse en cualquier momento.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pkmn} & Pokemon a añadir \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpokemon__database_a23410bdcc81997a4a9640e3fff6c2eaf}\label{classpokemon__database_a23410bdcc81997a4a9640e3fff6c2eaf}} 
+\index{pokemon\_database@{pokemon\_database}!getStats@{getStats}}
+\index{getStats@{getStats}!pokemon\_database@{pokemon\_database}}
+\doxysubsubsection{\texorpdfstring{getStats()}{getStats()}}
+{\footnotesize\ttfamily void pokemon\+\_\+database\+::get\+Stats (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption}) const}
+
+
+
+Muestra por pantalla todas las estadisticas del pokemon dicho. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pos} & La posicion en donde se ecuentra el pokemon dentro del vector \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpokemon__database_a5e33a03285f8e6b69570dc5e3175f346}\label{classpokemon__database_a5e33a03285f8e6b69570dc5e3175f346}} 
+\index{pokemon\_database@{pokemon\_database}!getTam@{getTam}}
+\index{getTam@{getTam}!pokemon\_database@{pokemon\_database}}
+\doxysubsubsection{\texorpdfstring{getTam()}{getTam()}}
+{\footnotesize\ttfamily int pokemon\+\_\+database\+::get\+Tam (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retorna el tamaño del vector creado. 
+
+\begin{DoxyReturn}{Returns}
+Tamaño del vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpokemon__database_a799f171e876bcb4fe21ce27b3a32f061}\label{classpokemon__database_a799f171e876bcb4fe21ce27b3a32f061}} 
+\index{pokemon\_database@{pokemon\_database}!getVector@{getVector}}
+\index{getVector@{getVector}!pokemon\_database@{pokemon\_database}}
+\doxysubsubsection{\texorpdfstring{getVector()}{getVector()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classpokemon}{pokemon}} $>$ pokemon\+\_\+database\+::get\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retorna el vector de pokemon. 
+
+Retorna una referencia a la posicion de memoria donde se localiza el vector donde se encuentran todosp los pokemon.
+
+\begin{DoxyReturn}{Returns}
+posicion de memoria 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+pokemon\+\_\+database.\+h\item 
+pokemon\+\_\+database.\+cpp\end{DoxyCompactItemize}

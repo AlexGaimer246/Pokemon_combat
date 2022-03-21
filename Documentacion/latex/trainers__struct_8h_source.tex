@@ -1,0 +1,97 @@
+\hypertarget{trainers__struct_8h_source}{}\doxysection{trainers\+\_\+struct.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by alexc on 20/02/2022.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef POKEMON\_TRAINERS\_STRUCT\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define POKEMON\_TRAINERS\_STRUCT\_H}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{classtrainers__struct}{trainers\_struct}} \{}
+\DoxyCodeLine{10 \textcolor{keyword}{public}:}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12     \mbox{\hyperlink{classtrainers__struct}{trainers\_struct}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14     \mbox{\hyperlink{classtrainers__struct}{trainers\_struct}}(\textcolor{keyword}{const} std::string nombre, \textcolor{keyword}{const} std::string pokemon1, \textcolor{keyword}{const} std::string pokemon2, \textcolor{keyword}{const} std::string pokemon3,}
+\DoxyCodeLine{15                     \textcolor{keyword}{const} std::string pokemon4, \textcolor{keyword}{const} std::string pokemon5, \textcolor{keyword}{const} std::string pokemon6):}
+\DoxyCodeLine{16             \_nombre(nombre), \_pokemon1(pokemon1), \_pokemon2(pokemon2), \_pokemon3(pokemon3), \_pokemon4(pokemon4),}
+\DoxyCodeLine{17             \_pokemon5(pokemon5), \_pokemon6(pokemon6) \{\};}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19     \mbox{\hyperlink{classtrainers__struct}{\string~trainers\_struct}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     \textcolor{keyword}{const} std::string \&getNombre()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{22         \textcolor{keywordflow}{return} \_nombre;}
+\DoxyCodeLine{23     \}}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25     \textcolor{keyword}{const} std::string \&getPokemon1()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{26         \textcolor{keywordflow}{return} \_pokemon1;}
+\DoxyCodeLine{27     \}}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     \textcolor{keyword}{const} std::string \&getPokemon2()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{30         \textcolor{keywordflow}{return} \_pokemon2;}
+\DoxyCodeLine{31     \}}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \textcolor{keyword}{const} std::string \&getPokemon3()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{34         \textcolor{keywordflow}{return} \_pokemon3;}
+\DoxyCodeLine{35     \}}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     \textcolor{keyword}{const} std::string \&getPokemon4()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{38         \textcolor{keywordflow}{return} \_pokemon4;}
+\DoxyCodeLine{39     \}}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41     \textcolor{keyword}{const} std::string \&getPokemon5()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{42         \textcolor{keywordflow}{return} \_pokemon5;}
+\DoxyCodeLine{43     \}}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45     \textcolor{keyword}{const} std::string \&getPokemon6()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{46         \textcolor{keywordflow}{return} \_pokemon6;}
+\DoxyCodeLine{47     \}}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50     \textcolor{keywordtype}{void} setNombre(\textcolor{keyword}{const} std::string \&nombre) \{}
+\DoxyCodeLine{51         \_nombre = nombre;}
+\DoxyCodeLine{52     \}}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54     \textcolor{keywordtype}{void} setPokemon1(\textcolor{keyword}{const} std::string \&pokemon1) \{}
+\DoxyCodeLine{55         \_pokemon1 = pokemon1;}
+\DoxyCodeLine{56     \}}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58     \textcolor{keywordtype}{void} setPokemon2(\textcolor{keyword}{const} std::string \&pokemon2) \{}
+\DoxyCodeLine{59         \_pokemon2 = pokemon2;}
+\DoxyCodeLine{60     \}}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62     \textcolor{keywordtype}{void} setPokemon3(\textcolor{keyword}{const} std::string \&pokemon3) \{}
+\DoxyCodeLine{63         \_pokemon3 = pokemon3;}
+\DoxyCodeLine{64     \}}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66     \textcolor{keywordtype}{void} setPokemon4(\textcolor{keyword}{const} std::string \&pokemon4) \{}
+\DoxyCodeLine{67         \_pokemon4 = pokemon4;}
+\DoxyCodeLine{68     \}}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70     \textcolor{keywordtype}{void} setPokemon5(\textcolor{keyword}{const} std::string \&pokemon5) \{}
+\DoxyCodeLine{71         \_pokemon5 = pokemon5;}
+\DoxyCodeLine{72     \}}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74     \textcolor{keywordtype}{void} setPokemon6(\textcolor{keyword}{const} std::string \&pokemon6) \{}
+\DoxyCodeLine{75         \_pokemon6 = pokemon6;}
+\DoxyCodeLine{76     \}}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78     \mbox{\hyperlink{classtrainers__struct}{trainers\_struct}}\& operator= (\textcolor{keyword}{const} \mbox{\hyperlink{classtrainers__struct}{trainers\_struct}} \&orig);}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80 \textcolor{keyword}{private}:}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82     std::string \_nombre = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{83     std::string \_pokemon1 = \textcolor{stringliteral}{"{}null"{}};}
+\DoxyCodeLine{84     std::string \_pokemon2 = \textcolor{stringliteral}{"{}null"{}};}
+\DoxyCodeLine{85     std::string \_pokemon3 = \textcolor{stringliteral}{"{}null"{}};}
+\DoxyCodeLine{86     std::string \_pokemon4 = \textcolor{stringliteral}{"{}null"{}};}
+\DoxyCodeLine{87     std::string \_pokemon5 = \textcolor{stringliteral}{"{}null"{}};}
+\DoxyCodeLine{88     std::string \_pokemon6 = \textcolor{stringliteral}{"{}null"{}};}
+\DoxyCodeLine{89 \};}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//POKEMON\_TRAINERS\_STRUCT\_H}}
+
+\end{DoxyCode}

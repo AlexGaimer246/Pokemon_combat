@@ -1,0 +1,72 @@
+\hypertarget{classmove__database}{}\doxysection{move\+\_\+database Class Reference}
+\label{classmove__database}\index{move\_database@{move\_database}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmove__database_a1a461be0fa54eb86fd35766a821ddd78}\label{classmove__database_a1a461be0fa54eb86fd35766a821ddd78}} 
+{\bfseries move\+\_\+database} ()
+\begin{DoxyCompactList}\small\item\em Object constructor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classmove__database_a5d46bdf4bb5d60168fd78b380490d39c}{get\+Move\+Data\+Tam}} () const
+\begin{DoxyCompactList}\small\item\em Proporciona el tamaño actual del vector que guarda todos los movmientos. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classmove__database_aed1f8bfcefb63583c148395bf2bf113d}{add\+Move}} (const \mbox{\hyperlink{classmove__struct}{move\+\_\+struct}} \&move)
+\begin{DoxyCompactList}\small\item\em Permite añadir un pokemon al vector. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classmove__struct}{move\+\_\+struct}} $>$ \mbox{\hyperlink{classmove__database_af30634cfedc0dc55c98288614203809e}{get\+Move\+Data}} () const
+\begin{DoxyCompactList}\small\item\em Retorna la referencia al vector \+\_\+move\+\_\+data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmove__database_a2e8a62618ab9e5e1d1b592ce14945b30}\label{classmove__database_a2e8a62618ab9e5e1d1b592ce14945b30}} 
+\mbox{\hyperlink{classmove__database}{move\+\_\+database}} \& {\bfseries operator=} (const \mbox{\hyperlink{classmove__database}{move\+\_\+database}} \&orig)=default
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmove__database_aed1f8bfcefb63583c148395bf2bf113d}\label{classmove__database_aed1f8bfcefb63583c148395bf2bf113d}} 
+\index{move\_database@{move\_database}!addMove@{addMove}}
+\index{addMove@{addMove}!move\_database@{move\_database}}
+\doxysubsubsection{\texorpdfstring{addMove()}{addMove()}}
+{\footnotesize\ttfamily std\+::string move\+\_\+database\+::add\+Move (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmove__struct}{move\+\_\+struct}} \&}]{move }\end{DoxyParamCaption})}
+
+
+
+Permite añadir un pokemon al vector. 
+
+Permite al programador añadir un movimiento desde cuaquier parte del codigo.
+
+
+\begin{DoxyParams}{Parameters}
+{\em move} & Movimiento a añadir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String indicando que el movimiento ha sido añadido de forma adecuada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmove__database_af30634cfedc0dc55c98288614203809e}\label{classmove__database_af30634cfedc0dc55c98288614203809e}} 
+\index{move\_database@{move\_database}!getMoveData@{getMoveData}}
+\index{getMoveData@{getMoveData}!move\_database@{move\_database}}
+\doxysubsubsection{\texorpdfstring{getMoveData()}{getMoveData()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classmove__struct}{move\+\_\+struct}} $>$ move\+\_\+database\+::get\+Move\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retorna la referencia al vector \+\_\+move\+\_\+data. 
+
+\begin{DoxyReturn}{Returns}
+\+\_\+move\+\_\+data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmove__database_a5d46bdf4bb5d60168fd78b380490d39c}\label{classmove__database_a5d46bdf4bb5d60168fd78b380490d39c}} 
+\index{move\_database@{move\_database}!getMoveDataTam@{getMoveDataTam}}
+\index{getMoveDataTam@{getMoveDataTam}!move\_database@{move\_database}}
+\doxysubsubsection{\texorpdfstring{getMoveDataTam()}{getMoveDataTam()}}
+{\footnotesize\ttfamily int move\+\_\+database\+::get\+Move\+Data\+Tam (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Proporciona el tamaño actual del vector que guarda todos los movmientos. 
+
+\begin{DoxyReturn}{Returns}
+Tamaño de \+\_\+move\+\_\+data 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+move\+\_\+database.\+h\item 
+move\+\_\+database.\+cpp\end{DoxyCompactItemize}

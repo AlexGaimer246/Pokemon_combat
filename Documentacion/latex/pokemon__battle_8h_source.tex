@@ -1,0 +1,89 @@
+\hypertarget{pokemon__battle_8h_source}{}\doxysection{pokemon\+\_\+battle.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by alexc on 24/02/2022.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef POKEMON\_POKEMON\_BATTLE\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define POKEMON\_POKEMON\_BATTLE\_H}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <array>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <cstdlib>}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}pokemon\_database.h"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}move\_database.h"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}trainers\_database.h"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}trainers\_struct.h"{}}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include "{}pokemon.h"{}}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include "{}move\_struct.h"{}}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{class }\mbox{\hyperlink{classpokemon__battle}{pokemon\_battle}}\{}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{keyword}{public}:}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \mbox{\hyperlink{classpokemon__battle_a1eebb9379a730e97314458dd927f06bf}{pokemon\_battle}}(\mbox{\hyperlink{classtrainers__struct}{trainers\_struct}} \&player, \mbox{\hyperlink{classtrainers__struct}{trainers\_struct}} \&rival, \textcolor{keywordtype}{string} \&difficulty); }
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     \mbox{\hyperlink{classpokemon__battle_a1eebb9379a730e97314458dd927f06bf}{pokemon\_battle}}(\mbox{\hyperlink{classtrainers__struct}{trainers\_struct}} \&player, \mbox{\hyperlink{classpokemon}{pokemon}} \&wild\_pokemon, \textcolor{keywordtype}{string} \&difficulty); }
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{keyword}{private}:}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34     \textcolor{keywordtype}{void} estadoBatalla();}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36     \textcolor{keywordtype}{bool} comprobarBatalla(\textcolor{keywordtype}{bool} \&victoria) \textcolor{keyword}{const};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38     \textcolor{keywordtype}{int} calculaIndice(\textcolor{keywordtype}{string} vect[], \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&tipo\_a\_buscar);}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40     \textcolor{keywordtype}{double} calculateDamage(\mbox{\hyperlink{classmove__struct}{move\_struct}} \&move, \mbox{\hyperlink{classpokemon}{pokemon}} \&pkmn\_user, \mbox{\hyperlink{classpokemon}{pokemon}} \&pkmn\_enemy);}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} pausa();}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44     \mbox{\hyperlink{classpokemon}{pokemon}} searchPokemon(\textcolor{keyword}{const} \textcolor{keywordtype}{string} \&name);}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46     \mbox{\hyperlink{classmove__struct}{move\_struct}} searchMove(\textcolor{keyword}{const} \textcolor{keywordtype}{string} \&mov);}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48     \textcolor{keywordtype}{bool} printMove(\mbox{\hyperlink{classmove__struct}{move\_struct}} \&mov);}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50     \textcolor{keywordtype}{int} mostrarPokemon(\textcolor{keyword}{const} \mbox{\hyperlink{classpokemon}{pokemon}} \&pkmn, \textcolor{keyword}{const} \textcolor{keywordtype}{bool} tieneCout);}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52     \textcolor{keywordtype}{bool} printMove(\mbox{\hyperlink{classmove__struct}{move\_struct}} \&mov, \textcolor{keywordtype}{int} \&indice, \textcolor{keyword}{const} \textcolor{keywordtype}{bool} tieneCout);}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54     \textcolor{keywordtype}{int} cambioPokemon();}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56     \textcolor{keywordtype}{double} atacar();}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58     \textcolor{keywordtype}{void} curarPokemon();}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60     \textcolor{keywordtype}{void} combat\_controller();}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62     \textcolor{keywordtype}{double} enemyAI(); }
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64     \mbox{\hyperlink{classtrainers__struct}{trainers\_struct}} \_player; }
+\DoxyCodeLine{65     \mbox{\hyperlink{classtrainers__struct}{trainers\_struct}} \_enemy; }
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67     vector<pokemon> \_playerTeam; }
+\DoxyCodeLine{68     \textcolor{comment}{//pokemon *\_playerTeam = nullptr; ///< Vector donde se guarda el equipo pokemon del jugador}}
+\DoxyCodeLine{69     \textcolor{keywordtype}{int} \_pokemonActual = 0; }
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71     vector<pokemon> \_enemyTeam; }
+\DoxyCodeLine{72     \textcolor{comment}{// pokemon *\_enemyTeam = nullptr; ///< Vector donde se guarda el equipo pokemon del rival}}
+\DoxyCodeLine{73     \textcolor{keywordtype}{int} \_pokemonEnemyActual = 0; }
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75     \mbox{\hyperlink{classpokemon}{pokemon}} \_wildPokemon; }
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77     \textcolor{keywordtype}{int} \_numPociones = 5; }
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79     \textcolor{keywordtype}{string} \_mode; }
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82     \textcolor{keywordtype}{string} \_difficulty; }
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90 \};}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//POKEMON\_POKEMON\_BATTLE\_H}}
+
+\end{DoxyCode}

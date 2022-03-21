@@ -1,0 +1,39 @@
+\hypertarget{move__database_8h_source}{}\doxysection{move\+\_\+database.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by alexc on 20/02/2022.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef POKEMON\_MOVE\_DATABASE\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define POKEMON\_MOVE\_DATABASE\_H}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <array>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}move\_struct.h"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{classmove__database}{move\_database}} \{}
+\DoxyCodeLine{14 \textcolor{keyword}{public}:}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16     \mbox{\hyperlink{classmove__database_a1a461be0fa54eb86fd35766a821ddd78}{move\_database}}();}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18     \textcolor{keywordtype}{int} \mbox{\hyperlink{classmove__database_a5d46bdf4bb5d60168fd78b380490d39c}{getMoveDataTam}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     std::string \mbox{\hyperlink{classmove__database_aed1f8bfcefb63583c148395bf2bf113d}{addMove}}(\textcolor{keyword}{const} \mbox{\hyperlink{classmove__struct}{move\_struct}}\& move); }
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22     std::vector<move\_struct> \mbox{\hyperlink{classmove__database_af30634cfedc0dc55c98288614203809e}{getMoveData}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24     \mbox{\hyperlink{classmove__database}{move\_database}}\& operator=(\textcolor{keyword}{const} \mbox{\hyperlink{classmove__database}{move\_database}} \&orig) = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{keyword}{private}:}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28     \textcolor{keyword}{static} \textcolor{keywordtype}{bool} bucle(\textcolor{keyword}{const} std::string \&cosa\_a\_buscar, \textcolor{keyword}{const} std::vector<std::string>\& cosa\_que\_se\_busca);}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     \textcolor{keyword}{static} std::vector<move\_struct> \_move\_data;}
+\DoxyCodeLine{31 \};}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//POKEMON\_MOVE\_DATABASE\_H}}
+
+\end{DoxyCode}

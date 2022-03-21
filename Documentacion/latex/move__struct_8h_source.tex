@@ -1,0 +1,42 @@
+\hypertarget{move__struct_8h_source}{}\doxysection{move\+\_\+struct.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by alexc on 20/02/2022.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef POKEMON\_MOVE\_STRUCT\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define POKEMON\_MOVE\_STRUCT\_H}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{classmove__struct}{move\_struct}} \{}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{public}:}
+\DoxyCodeLine{12     \mbox{\hyperlink{classmove__struct}{move\_struct}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{13     \mbox{\hyperlink{classmove__struct}{move\_struct}}(std::string nombre, std::string move\_type, \textcolor{keywordtype}{int} damage, \textcolor{keywordtype}{int} pp, std::string type\_of\_damage);}
+\DoxyCodeLine{14     \mbox{\hyperlink{classmove__struct}{\string~move\_struct}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16     \textcolor{keyword}{const} std::string \&getNombre() \textcolor{keyword}{const};}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18     \textcolor{keyword}{const} std::string \&getMoveType() \textcolor{keyword}{const};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{keywordtype}{int} getDamage() \textcolor{keyword}{const};}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22     \textcolor{keywordtype}{int} getPp() \textcolor{keyword}{const};}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24     \textcolor{keyword}{const} std::string \&getTypeOfDamage() \textcolor{keyword}{const};}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \mbox{\hyperlink{classmove__struct}{move\_struct}}\& operator=(\textcolor{keyword}{const} \mbox{\hyperlink{classmove__struct}{move\_struct}} \&orig);}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{keyword}{private}:}
+\DoxyCodeLine{29     std::string nombre = \textcolor{stringliteral}{"{}null"{}}; }
+\DoxyCodeLine{30     std::string move\_type = \textcolor{stringliteral}{"{}null"{}}; }
+\DoxyCodeLine{31     \textcolor{keywordtype}{int} damage = -\/1; }
+\DoxyCodeLine{32     \textcolor{keywordtype}{int} pp = -\/1; }
+\DoxyCodeLine{33     std::string type\_of\_damage = \textcolor{stringliteral}{"{}null"{}}; }
+\DoxyCodeLine{34 \};}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//POKEMON\_MOVE\_STRUCT\_H}}
+
+\end{DoxyCode}

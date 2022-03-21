@@ -1,0 +1,52 @@
+\hypertarget{pokemon__database_8h_source}{}\doxysection{pokemon\+\_\+database.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by alexc on 20/02/2022.}}
+\DoxyCodeLine{3 \textcolor{comment}{// This class has all the Pokemon created in this game}}
+\DoxyCodeLine{4 \textcolor{comment}{//}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#ifndef POKEMON\_POKEMON\_DATABASE\_H}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#define POKEMON\_POKEMON\_DATABASE\_H}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}pokemon.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}move\_database.h"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}sstream"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}iostream"{}}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{classpokemon__database}{pokemon\_database}} \{}
+\DoxyCodeLine{17 \textcolor{keyword}{public}:}
+\DoxyCodeLine{18     \mbox{\hyperlink{classpokemon__database}{pokemon\_database}}() \{}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \}}
+\DoxyCodeLine{21     \mbox{\hyperlink{classpokemon__database}{\string~pokemon\_database}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     \textcolor{keywordtype}{int} \mbox{\hyperlink{classpokemon__database_a5e33a03285f8e6b69570dc5e3175f346}{getTam}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25     std::vector<pokemon> \mbox{\hyperlink{classpokemon__database_a799f171e876bcb4fe21ce27b3a32f061}{getVector}}() \textcolor{keyword}{const}; }
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     \textcolor{keyword}{static} std::string \mbox{\hyperlink{classpokemon__database_ad1c819d49991b49933d59ec173d00856}{addPokemon}}(\textcolor{keyword}{const} \mbox{\hyperlink{classpokemon}{pokemon}}\& pkmn); }
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} \mbox{\hyperlink{classpokemon__database_a23410bdcc81997a4a9640e3fff6c2eaf}{getStats}}(\textcolor{keywordtype}{int} pos) \textcolor{keyword}{const};}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     \textcolor{keyword}{static} std::vector<pokemon> \mbox{\hyperlink{classpokemon__database_ad328f3a15da0aebca0e14b2072cbfecf}{\_pokemon\_data}}; }
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \mbox{\hyperlink{classpokemon__database}{pokemon\_database}}\& operator= (\textcolor{keyword}{const} \mbox{\hyperlink{classpokemon__database}{pokemon\_database}} \&orig);}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{keyword}{private}:}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     \textcolor{keyword}{static} \textcolor{keywordtype}{bool} bucle(\textcolor{keyword}{const} \textcolor{keywordtype}{string} \&cosa\_que\_queremos\_buscar, \textcolor{keyword}{const} std::vector<move\_struct>\& cosa\_buscadora);}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39     \textcolor{keyword}{static} \textcolor{keywordtype}{bool} bucle(\textcolor{keyword}{const} \textcolor{keywordtype}{string} \&cosa\_a\_buscar, \textcolor{keyword}{const} std::vector<string>\& cosa\_que\_se\_busca);}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41     \textcolor{comment}{// pokemon* \_pokemon\_data = nullptr; ///< El puntero al vector dinamico de pokemon}}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43     \textcolor{keywordtype}{int} tam = -\/1;}
+\DoxyCodeLine{44 \};}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//POKEMON\_POKEMON\_DATABASE\_H}}
+
+\end{DoxyCode}

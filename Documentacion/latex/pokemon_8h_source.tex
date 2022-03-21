@@ -1,0 +1,78 @@
+\hypertarget{pokemon_8h_source}{}\doxysection{pokemon.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by alexc on 20/02/2022.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef POKEMON\_POKEMON\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define POKEMON\_POKEMON\_H}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{8 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{classpokemon}{pokemon}} \{}
+\DoxyCodeLine{11 \textcolor{keyword}{public}:}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13     \mbox{\hyperlink{classpokemon}{pokemon}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15     \mbox{\hyperlink{classpokemon}{pokemon}}(\textcolor{keywordtype}{string} nombre, \textcolor{keywordtype}{string} type1, \textcolor{keywordtype}{string} type2, \textcolor{keywordtype}{int} pv, \textcolor{keywordtype}{int} attack, \textcolor{keywordtype}{int} defense, \textcolor{keywordtype}{int} special\_attack,}
+\DoxyCodeLine{16     \textcolor{keywordtype}{int} special\_defese, \textcolor{keywordtype}{int} speed, \textcolor{keywordtype}{string} move1, \textcolor{keywordtype}{string} move2, \textcolor{keywordtype}{string} move3, \textcolor{keywordtype}{string} move4);}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18     \mbox{\hyperlink{classpokemon}{\string~pokemon}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{comment}{// Getters for every parameter}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22     \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&\mbox{\hyperlink{classpokemon_ab952ac8bc2e78153a4f34783efee4e45}{getNombre}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24     \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&getType1() \textcolor{keyword}{const};}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&getType2() \textcolor{keyword}{const};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28     \textcolor{keywordtype}{double} getPv() \textcolor{keyword}{const};}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     \textcolor{keywordtype}{int} getAttack() \textcolor{keyword}{const};}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32     \textcolor{keywordtype}{int} getDefense() \textcolor{keyword}{const};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34     \textcolor{keywordtype}{int} getSpecialAttack() \textcolor{keyword}{const};}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36     \textcolor{keywordtype}{int} getSpecialDefese() \textcolor{keyword}{const};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38     \textcolor{keywordtype}{int} getSpeed() \textcolor{keyword}{const};}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40     \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&getMove1() \textcolor{keyword}{const};}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&getMove2() \textcolor{keyword}{const};}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44     \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&getMove3() \textcolor{keyword}{const};}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46     \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&getMove4() \textcolor{keyword}{const};}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48     \textcolor{keywordtype}{void} setPv(\textcolor{keywordtype}{double} pv);}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50     \textcolor{keywordtype}{double} \_pv = -\/1;}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52     \mbox{\hyperlink{classpokemon}{pokemon}}\& \mbox{\hyperlink{classpokemon_a78e19f9a05de6480b6f39367e0066a79}{operator= }}(\textcolor{keyword}{const} \mbox{\hyperlink{classpokemon}{pokemon}} \&orig);}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54 \textcolor{keyword}{private}:}
+\DoxyCodeLine{55     \textcolor{keywordtype}{string} \_nombre = \textcolor{stringliteral}{"{}null"{}};}
+\DoxyCodeLine{56     \textcolor{keywordtype}{string} \_type1 = \textcolor{stringliteral}{"{}null"{}};}
+\DoxyCodeLine{57     \textcolor{keywordtype}{string} \_type2 = \textcolor{stringliteral}{"{}null"{}};}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59     \textcolor{comment}{// double \_pv = -\/1;}}
+\DoxyCodeLine{60     \textcolor{keywordtype}{int} \_attack = -\/1;}
+\DoxyCodeLine{61     \textcolor{keywordtype}{int} \_defense = -\/1;}
+\DoxyCodeLine{62     \textcolor{keywordtype}{int} \_special\_attack = -\/1;}
+\DoxyCodeLine{63     \textcolor{keywordtype}{int} \_special\_defese = -\/1;}
+\DoxyCodeLine{64     \textcolor{keywordtype}{int} \_speed = -\/1;}
+\DoxyCodeLine{65     \textcolor{comment}{// MoveSet}}
+\DoxyCodeLine{66     \textcolor{keywordtype}{string} \_move1 = \textcolor{stringliteral}{"{}null"{}};}
+\DoxyCodeLine{67     \textcolor{keywordtype}{string} \_move2 = \textcolor{stringliteral}{"{}null"{}};}
+\DoxyCodeLine{68     \textcolor{keywordtype}{string} \_move3 = \textcolor{stringliteral}{"{}null"{}};}
+\DoxyCodeLine{69     \textcolor{keywordtype}{string} \_move4 = \textcolor{stringliteral}{"{}null"{}};}
+\DoxyCodeLine{70 \};}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//POKEMON\_POKEMON\_H}}
+
+\end{DoxyCode}
